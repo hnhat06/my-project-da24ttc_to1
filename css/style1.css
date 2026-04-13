@@ -1,26 +1,27 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: #fff;
-	background-color: transparent;
-}
-th, td {
-    border: 1px solid #000;
-    padding: 8px;
-    text-align: left;
-}
-
 body {
     background-color: lightblue;
+    margin: 20px; 
+    font-family: Arial, sans-serif;
 }
-h1, h2, p {
-    color: white;
-    text-shadow: 2px 2px 4px black;
-	text-shadow: 2px 2px 5px black;
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2); 
 }
-p {
-    color: white;
+
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    color: #000; 
+}
+
+
+th {
+    background-color: rgba(0, 0, 0, 0.1); 
     font-weight: bold;
 }
-	
