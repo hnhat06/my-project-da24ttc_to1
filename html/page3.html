@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký</title>
+	<link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+
+    <h2>Form Đăng Ký Sinh Viên</h2>
+
+    <form action="#" method="post">
+
+        <!-- Họ tên -->
+        <label>Họ tên:</label><br>
+        <input type="text" name="hoten"><br><br>
+
+        <!-- MSSV -->
+        <label>MSSV:</label><br>
+        <input type="text" name="mssv"><br><br>
+
+        <!-- Lớp -->
+        <label>Lớp:</label><br>
+        <select name="lop">
+            <option value="">--Chọn lớp--</option>
+            <option value="CNTT1">DA24TTA</option>
+            <option value="CNTT2">DA24TTB</option>
+            <option value="CNTT3">DA24TTC</option>
+			<option value="CNTT3">DA24TTD</option>
+        </select><br><br>
+
+        <!-- Giới tính -->
+        <label>Giới tính:</label><br>
+        <input type="radio" name="gioitinh" value="nam"> Nam
+        <input type="radio" name="gioitinh" value="nu"> Nữ<br><br>
+
+        <label>Điểm mạnh:</label><br>
+		<input type="checkbox" name="diemmanh" value="giaotiep">  Giải quyết vấn đề
+		<input type="checkbox" name="diemmanh" value="lamviecnhom"> Lập trình
+		<input type="checkbox" name="diemmanh" value="tuduy"> Debug lỗi<br>
+		Khác: <input type="text" name="diemmanh_khac"><br><br>
+		
+        <!-- Hình ảnh -->
+        <label>Hình ảnh:</label><br>
+        <input type="file" name="hinhanh"><br><br>
+		
+		<!--Số điện thoại-->
+		<label>Số điện thoại:</label><br>
+		<input type="tel" name="sdt" placeholder="Nhập số điện thoại"><br><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <!-- Nút -->
+        <input type="submit" value="Đăng ký">
+        <input type="reset" value="Nhập lại">
+
+    </form>
+
+</body>
+</html>
