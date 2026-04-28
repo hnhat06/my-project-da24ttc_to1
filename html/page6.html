@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>hehe    </title>
+    <link rel="stylesheet" href="../css/style6.css">
+</head>
+<body>
+
+    <script>
+        // Tạo thẻ div
+        const newDiv = document.createElement("div");
+        // Thiết lập class cho div
+        newDiv.setAttribute("class","product-item" );
+        //
+        const productImage = document.createElement ("div");
+        productImage.setAttribute("class","product-image");
+
+        //tạo hình
+        const productImageNode = document.createElement("img");
+        productImageNode.setAttribute("src", "../assets/images/anh.jpg");
+        productImage.appendChild(productImageNode);
+
+        const productInfo = document.createElement("div");
+        productInfo.setAttribute("class","product-info");
+        //tạo tên
+        const productName = document.createElement("p");
+        productName.textContent = "Cua Hoàng Đế";
+        productInfo.appendChild(productName);
+        //tạo giá
+        const productPrice = document.createElement("p");
+        productPrice.textContent = "Giá: 3.200.000 VNĐ";
+        productInfo.appendChild(productPrice);
+        //tạo link
+        const productLink = document.createElement("a");
+        productLink.href = "#";
+        productLink.textContent = "xem chi tiết";
+        productInfo.appendChild(productLink);
+
+        newDiv.appendChild(productImage);
+        newDiv.appendChild(productInfo);
+
+        // Gắn div vào body 
+        document.body.appendChild(newDiv);
+    </script>
+
+</body>
+</html>
