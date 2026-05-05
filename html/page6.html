@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
     <title>hehe    </title>
     <link rel="stylesheet" href="../css/style6.css">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <script src = "../js/lib.js"></script>
 </head>
 <body>
+    <div class = "container">
+        <div class = "product-list row row-cols-1 row-cols-4 g-4" id = "product-list">
 
+        </div>
+    </div>
     <script>
-        // Tạo thẻ div
-        const newDiv = document.createElement("div");
-        // Thiết lập class cho div
-        newDiv.setAttribute("class","product-item" );
-        //
-        const productImage = document.createElement ("div");
-        productImage.setAttribute("class","product-image");
-
-        //tạo hình
-        const productImageNode = document.createElement("img");
-        productImageNode.setAttribute("src", "../assets/images/anh.jpg");
-        productImage.appendChild(productImageNode);
-
-        const productInfo = document.createElement("div");
-        productInfo.setAttribute("class","product-info");
-        //tạo tên
-        const productName = document.createElement("p");
-        productName.textContent = "Cua Hoàng Đế";
-        productInfo.appendChild(productName);
-        //tạo giá
-        const productPrice = document.createElement("p");
-        productPrice.textContent = "Giá: 3.200.000 VNĐ";
-        productInfo.appendChild(productPrice);
-        //tạo link
-        const productLink = document.createElement("a");
-        productLink.href = "#";
-        productLink.textContent = "xem chi tiết";
-        productInfo.appendChild(productLink);
-
-        newDiv.appendChild(productImage);
-        newDiv.appendChild(productInfo);
-
-        // Gắn div vào body 
-        document.body.appendChild(newDiv);
+        productList.forEach(function(item){
+            addProduct(item.id, item.name, item.price, item.image, item.productLink);
+        }) 
     </script>
 
 </body>
